@@ -32,12 +32,12 @@ abstract final class AppRoutes {
   static const String semesterEdit = '/settings/semesters/:id/edit';
 }
 
-final _rootNavigatorKey = GlobalKey<NavigatorState>();
 final shellNavigatorKey = GlobalKey<NavigatorState>();
 
-GoRouter buildRouter({required bool onboardingComplete}) {
+GoRouter buildRouter({required bool onboardingComplete, GlobalKey<NavigatorState>? navigatorKey}) {
+  final rootKey = navigatorKey ?? GlobalKey<NavigatorState>();
   return GoRouter(
-    navigatorKey: _rootNavigatorKey,
+    navigatorKey: rootKey,
     initialLocation:
         onboardingComplete ? AppRoutes.dashboard : AppRoutes.welcome,
     routes: [

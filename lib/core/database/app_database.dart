@@ -39,13 +39,8 @@ class AppDatabase extends _$AppDatabase {
           await m.createAll();
         },
         onUpgrade: (Migrator m, int from, int to) async {
-          final allTables = allSchemaEntities.toList().reversed;
-          for (final entity in allTables) {
-            if (entity is TableInfo) {
-              await m.deleteTable(entity.actualTableName);
-            }
-          }
-          await m.createAll();
+          // Preserve user data across app updates.
+          // Add explicit migration steps here when schema changes.
         },
       );
 }

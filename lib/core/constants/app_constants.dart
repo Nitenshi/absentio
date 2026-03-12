@@ -5,6 +5,10 @@ abstract final class AppConstants {
   static const String keyOnboardingComplete = 'onboarding_complete';
   static const String keyThemeMode = 'theme_mode';
   static const String keyLocale = 'locale';
+  static const String keySkippedVersion = 'skipped_version';
+
+  static const String githubOwner = 'nitenshi';
+  static const String githubRepo = 'absentio';
 
   static const double defaultAttendanceRequirement = 0.60;
 

@@ -130,5 +130,17 @@
   "course_attendance_locked": "Attendance requirement is set at semester level ({}%). Change this from Settings > Manage Semesters.",
 
   "course_duplicate_name": "A course with this name already exists in this semester.",
-  "semester_duplicate_name": "A semester with this name already exists."
+  "semester_duplicate_name": "A semester with this name already exists.",
+
+  "update_available_title": "Update Available",
+  "update_available_body": "A new version ({}) is available. You are using {}.",
+  "update_download": "Download & Install",
+  "update_skip_version": "Skip this version",
+  "update_later": "Later",
+  "update_downloading": "Downloading update...",
+  "update_download_complete": "Download complete. Installing...",
+  "update_download_failed": "Download failed. Please try again.",
+  "update_check": "Check for Updates",
+  "update_no_update": "You are using the latest version.",
+  "update_check_failed": "Could not check for updates. Please check your internet connection."
 }

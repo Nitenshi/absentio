@@ -130,5 +130,17 @@
   "course_attendance_locked": "Devam zorunluluğu dönem düzeyinde belirlendi (%{}). Değiştirmek için Ayarlar > Dönemleri Yönet bölümüne gidin.",
 
   "course_duplicate_name": "Bu isimde zaten bir ders var.",
-  "semester_duplicate_name": "Bu isimde zaten bir dönem var."
+  "semester_duplicate_name": "Bu isimde zaten bir dönem var.",
+
+  "update_available_title": "Güncelleme Mevcut",
+  "update_available_body": "Yeni bir sürüm ({}) mevcut. Şu anda {} kullanıyorsunuz.",
+  "update_download": "İndir ve Kur",
+  "update_skip_version": "Bu sürümü atla",
+  "update_later": "Daha Sonra",
+  "update_downloading": "Güncelleme indiriliyor...",
+  "update_download_complete": "İndirme tamamlandı. Kuruluyor...",
+  "update_download_failed": "İndirme başarısız oldu. Lütfen tekrar deneyin.",
+  "update_check": "Güncellemeleri Denetle",
+  "update_no_update": "En güncel sürümü kullanıyorsunuz.",
+  "update_check_failed": "Güncellemeler kontrol edilemedi. İnternet bağlantınızı kontrol edin."
 }

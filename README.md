@@ -30,6 +30,7 @@ Absentio, üniversite öğrencileri için geliştirilmiş bir devamsızlık taki
 - **Dönem Geneli Devamsızlık** — Tüm dersler için tek bir devamsızlık oranı belirleyin veya ders bazlı ayarlayın
 - **Tema Desteği** — Açık, koyu ve sistem teması
 - **Çift Dil** — Türkçe ve İngilizce
+- **Uygulama İçi Güncelleme** — Yeni sürüm çıktığında otomatik bildirim, indirme ve kurulum
 - **Çevrimdışı Çalışır** — İnternet bağlantısı gerektirmez, tüm veriler cihazda saklanır
 
 ### Kurulum
@@ -65,6 +66,7 @@ Absentio is an attendance tracking app built for university students. It tracks 
 - **Uniform Attendance** — Set a single attendance requirement for all courses or configure per-course
 - **Theme Support** — Light, dark, and system theme
 - **Bilingual** — Turkish and English
+- **In-App Updates** — Automatic notification, download, and install when a new version is available
 - **Works Offline** — No internet required, all data stored locally on device
 
 ### Installation

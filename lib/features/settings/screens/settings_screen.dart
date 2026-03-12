@@ -4,10 +4,33 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../app/router.dart';
+import '../../../core/services/update_service.dart';
+import '../../../core/widgets/update_dialog.dart';
 import '../providers/settings_provider.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
+
+  Future<void> _checkForUpdate(BuildContext context) async {
+    final messenger = ScaffoldMessenger.of(context);
+    try {
+      final updateInfo = await UpdateService.checkForUpdate(ignoreSkipped: true);
+      if (!context.mounted) return;
+      if (updateInfo != null) {
+        final currentVersion = await UpdateService.getCurrentVersion();
+        if (!context.mounted) return;
+        UpdateDialog.show(context, updateInfo, currentVersion);
+      } else {
+        messenger.showSnackBar(
+          SnackBar(content: Text(tr('update_no_update'))),
+        );
+      }
+    } catch (_) {
+      messenger.showSnackBar(
+        SnackBar(content: Text(tr('update_check_failed'))),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -72,6 +95,14 @@ class SettingsScreen extends ConsumerWidget {
             title: Text(tr('settings_semesters')),
             trailing: const Icon(Icons.chevron_right),
             onTap: () => context.push(AppRoutes.semesterList),
+          ),
+          const Divider(),
+
+          ListTile(
+            leading: const Icon(Icons.system_update_outlined),
+            title: Text(tr('update_check')),
+            trailing: const Icon(Icons.chevron_right),
+            onTap: () => _checkForUpdate(context),
           ),
           const Divider(),
 
