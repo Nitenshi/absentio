@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logos/absentio_logo_black.png" alt="Absentio Logo" width="120"/>
+  <img src="assets/logos/logo.png" alt="Absentio Logo" width="120"/>
 </p>
 
 <h1 align="center">Absentio</h1>
